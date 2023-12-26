@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.container .title {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#canvas {
+    width: 100%;
+}
+
+.dienap{
+    background: linear-gradient(40deg,#08560b14,#ffeb3b17);
+    border-radius: 3px;
+    border: 3px solid #d5d5d500;
+    color: #333333;
+    border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
+    border-image-slice: 1;
+    font-family: inherit;
+    font-size: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 1px 0px;
+    vertical-align: baseline;
+    position: relative;
+    top: 12px;
+    left: 85px;
+    margin-bottom: 100px;
+}
+.dongdien{
+    background: linear-gradient(40deg,#4caf5014,#ffeb3b17);
+    border-radius: 3px;
+    border: 3px solid #d5d5d500;
+    color: #333333;
+    border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
+    border-image-slice: 1;
+    font-family: inherit;
+    font-size: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 1px 0px;
+    vertical-align: baseline;
+    position: relative;
+    top: 12px;
+    left: 90px;
+}
+.tanso{
+    background: linear-gradient(40deg,#4caf5014,#ffeb3b17);
+    border-radius: 3px;
+    border: 3px solid #d5d5d500;
+    color: #333333;
+    border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
+    border-image-slice: 1;
+    font-family: inherit;
+    font-size: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    width: 100px;
+    height: 40px;
+    text-align: left;
+    padding: 1px 0px;
+    vertical-align: baseline;
+    position: relative;
+    top: 12px;
+    left: 90px;
+}
+
+.van{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: -370px;
+    left: 850px;
+}
+.vaux{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: -450px;
+    left: 95px;   
+}

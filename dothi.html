@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GRAPH</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
+    </head>
+    <body>
+        <canvas id="linechart"></canvas>
+    </body>
+    <script>
+        var bienx = ['thu2', 'thu3', 'thu4', 'thu5', 'thu6', 'thu7', 'cn'];
+        var bieny = [2,5,6,8,1,3,10];
+        var CHART = document.getElementById('linechart').getContext("2d");
+        var line_chart = new Chart (CHART,{
+          type: "line",
+          data: {
+            labels: bienx,
+            datasets: [{
+              label: 'name_data',
+              data: bieny
+            }]
+          }
+        });
+      </script>
+</html>

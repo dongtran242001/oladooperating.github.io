@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(199, 211, 211);
+}
+#wrapper{
+    background-color: rgb(199, 211, 211);
+
+    /* max-width: 960px; */
+    /* margin: 0px auto;  */
+}
+#header{
+    background-color: rgb(199, 211, 211);
+    color:black; 
+    padding: 5px; 
+    text-align:center; 
+}
+#main-content{
+    display:flex; 
+}
+#content{
+    background-color: rgb(199, 211, 211);
+    flex-basis: 70%;
+}
+#sidebar{
+    background-color: rgb(199, 211, 211);
+    flex-basis: 30%;
+}
+#footer{
+    background:rgb(199, 211, 211);
+}
+.imglogo{
+    background: linear-gradient(rgb(97, 161, 186), rgb(241, 238, 238) );
+}
+.text-hotline {
+    position: absolute; /* Đặt vị trí của văn bản là tuyệt đối trong container */
+    top: 678px; /* Vị trí từ phía trên */
+    left: 1070px; /* Vị trí từ phía trái */
+    right: 50px;   
+    padding: 10px; /* Khoảng cách lề bên trong văn bản */
+}
+.imglogoomron{
+    background: linear-gradient(rgb(97, 161, 186), rgb(241, 238, 238) );
+}
+h3{
+    text-shadow: 5px 5px 5px rgb(67, 72, 135) ;
+    text-align: justify;
+    text-align-last: center;
+}
+p{
+    color:rgb(9, 9, 92);
+    text-align:justify;  
+    font-family: 'roboto, sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    border-style:none ; 
+}
+z{
+    font-size: 16px;
+}

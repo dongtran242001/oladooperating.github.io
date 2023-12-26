@@ -1,0 +1,355 @@
+body{
+    background-color: rgb(199, 211, 211);
+
+}
+#wrapper{
+    background-color: rgb(199, 211, 211);
+    /* max-width: 960px; */
+    margin: 0px auto; 
+
+}
+#header{
+    background-color: rgb(199, 211, 211);
+    color:black; 
+    padding: 5px; 
+    text-align:center; 
+    margin: 0px auto;
+}
+#main-content{
+    display:flex; 
+    /* flex-basis: 100%; */
+    min-height: 500px;
+    margin: 0px auto;
+    background-color: rgb(199, 211, 211);
+}
+#content{
+    background-color: rgb(199, 211, 211);
+    flex-basis: 40%;
+    margin:0%;
+}
+#content1{
+    background-color: rgb(199, 211, 211);
+    flex-basis: 30%;
+    margin:0%;
+}
+#sidebar{
+    background-color: rgb(199, 211, 211);
+    flex-basis: 30%;
+    position: relative;
+    display: inline-block;
+    margin:0%;
+}
+.omron-image {
+    display: block;
+}
+.imge {
+    display: block;
+}
+#footer{
+    background:rgb(199, 211, 211);
+    margin: 0px auto;
+}
+.row{
+    float:left;
+    width:100%;
+}
+.imglogo{
+    background: linear-gradient(rgb(97, 161, 186), rgb(241, 238, 238) );
+}
+.text-hotline {
+    position: absolute; /* Đặt vị trí của văn bản là tuyệt đối trong container */
+    top: 520px; /* Vị trí từ phía trên */
+    left: 9px; /* Vị trí từ phía trái */
+    right: 50px;   
+    padding: 10px; /* Khoảng cách lề bên trong văn bản */
+}
+.imglogoomron{
+    background: linear-gradient(rgb(97, 161, 186), rgb(241, 238, 238) );
+}
+/* style.css */
+
+/* start stop  */
+.buttons {
+    display:flex;
+    flex-direction: row;
+    margin-top: 220px;
+    position: absolute;
+    top: 0;
+    left: 35px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.status-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+
+.status-icons {
+    position: absolute;
+    top: 88px; /* Điều chỉnh top cho biểu tượng Running */
+    left: 294px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.status-icons1 {
+    position: absolute;
+    top: 210px; /* Điều chỉnh top cho biểu tượng Running */
+    left: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.start-button, .stop-button {
+    width: 62px; /* Điều chỉnh độ rộng của nút Start và Stop tùy theo nhu cầu */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    display: flex;
+    
+    
+    
+}
+.setFrequency_Button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.setFrequency_ButtonMaximum {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.start-button {
+    margin-right: 85px; /* Cách nút Start bên phải ảnh 20px */
+}
+
+.stop-button {
+    margin-right: 190px; /* Cách nút Stop bên trái ảnh 20px */
+    background-color: #FF5733;
+}
+.start-button:hover,.stop-button:hover{
+    background-color: black;
+}
+.start-button:active, .stop-button:active {
+    background-color: black;
+}
+.setFrequency_Button:hover{
+    background-color: black;
+}
+.setFrequency_Button:active {
+    background-color: black;
+}
+.status-icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.status-icon1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.stopped {
+    background-color: red; /* Màu đỏ cho trạng thái Stopped */
+    margin-right: 155px; /* Điều chỉnh vị trí của biểu tượng Stopped từ bên phải */
+    margin-top: 25px;
+}
+.running {
+    background-color: green; /* Màu xanh lá cho trạng thái Running */
+    margin-left: -37px; /* Điều chỉnh vị trí của biểu tượng Running từ bên trái */
+    margin-top: 25px;
+  }
+.status-icon.running {
+    background-color: #4CAF50;
+}
+.status-icon.Auto {
+    background-color: #4CAF50;
+}
+.status-Voltage {
+    position: absolute;
+    left:210px;
+    margin-top: -170px;
+}
+.status-icon Voltageon{
+    position: absolute;
+    margin-right: px;
+
+}
+
+.status-icon.stopped {
+    background-color: green;
+}
+.status-icon.Manual {
+    background-color: rgb(162, 160, 160);
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+}
+#statusText {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* Chọn màu nền tùy thuộc vào trạng thái */
+#content.running {
+    background-color: #4CAF50; /* Màu xanh lá cho "Running" */
+    /* color: white; */
+    min-height: 30px;
+    
+}
+#content.stopped {
+    background-color: #FF5733; /* Màu đỏ cho "Stopped" */
+    /* color: white; */
+    min-height: 30px;
+}
+/* start stop  */
+h3{
+    text-shadow: 5px 5px 5px rgb(67, 72, 135) ;
+    text-align: justify;
+    text-align-last: center;
+}
+p{
+    color:rgb(9, 9, 92);
+    text-align:justify;  
+    font-family: 'roboto, sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    border-style:none ; 
+}
+z{
+    font-size: 16px;
+}
+
+/* tần số */
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+.image-container1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    display: inline-block;
+    
+   
+  }
+.image-container2 {
+    position: relative;
+    display: inline-block;
+  }
+  .image-container3 {
+    
+    flex-direction: row;
+    position: relative;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .frequency-overlay {
+    position: absolute;
+    top: -290px; /* Điều chỉnh top theo vị trí mong muốn trên ảnh */
+    left: -270px; /* Điều chỉnh left theo vị trí mong muốn trên ảnh */
+    background-color: rgba(199, 211, 211); /* Đặt màu nền của phần tử hiển thị tần số */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 50px; /* Điều chỉnh kích thước và kiểu chữ của tần số */
+    z-index: 1; /* Đảm bảo phần tử nằm trên ảnh */
+  }
+  /* Updw */
+  .Voltage-overlay {
+    color:green;
+    display: block;
+
+    position: absolute;
+    top: 70px; /* Điều chỉnh top theo vị trí mong muốn trên ảnh */
+    left: 60px; /* Điều chỉnh left theo vị trí mong muốn trên ảnh */
+    background-color: rgba(199, 211, 211); /* Đặt màu nền của phần tử hiển thị tần số */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 50px; /* Điều chỉnh kích thước và kiểu chữ của tần số */
+    z-index: 1; /* Đảm bảo phần tử nằm trên ảnh */
+  }
+  .Ampe-overlay {
+    color:green;
+    display: block;
+
+    position: absolute;
+    top: 70px; /* Điều chỉnh top theo vị trí mong muốn trên ảnh */
+    left: 350px; /* Điều chỉnh left theo vị trí mong muốn trên ảnh */
+    background-color: rgba(199, 211, 211); /* Đặt màu nền của phần tử hiển thị tần số */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 50px; /* Điều chỉnh kích thước và kiểu chữ của tần số */
+    z-index: 1; /* Đảm bảo phần tử nằm trên ảnh */
+  }
+  .RPM-overlay {
+    color:green;
+    display: block;
+
+    position: absolute;
+    top: 240px; /* Điều chỉnh top theo vị trí mong muốn trên ảnh */
+    left: 350px; /* Điều chỉnh left theo vị trí mong muốn trên ảnh */
+    background-color: rgba(199, 211, 211); /* Đặt màu nền của phần tử hiển thị tần số */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 50px; /* Điều chỉnh kích thước và kiểu chữ của tần số */
+    z-index: 1; /* Đảm bảo phần tử nằm trên ảnh */
+  }
+  .Frequency-overlay1 {
+    color:green;
+    display: block;
+
+    position: absolute;
+    top: 240px; /* Điều chỉnh top theo vị trí mong muốn trên ảnh */
+    left: 60px; /* Điều chỉnh left theo vị trí mong muốn trên ảnh */
+    background-color: rgba(199, 211, 211); /* Đặt màu nền của phần tử hiển thị tần số */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 50px; /* Điều chỉnh kích thước và kiểu chữ của tần số */
+    z-index: 1; /* Đảm bảo phần tử nằm trên ảnh */
+  }
+  .Voltage-image {
+    background-color: rgba(199, 211, 211);
+    margin-top: 40px;
+    
+  }
+  .Ampe-image {
+    background-color: rgba(199, 211, 211);
+    margin-top: 40px;
+    
+  }
+  .Frequene-image {
+    background-color: rgba(199, 211, 211);
+    margin-top: 40px;
+    
+  }
+  .RPM-image {
+    background-color: rgba(199, 211, 211);
+    margin-top: 40px;
+    
+  }
+  .motor3phase-image {
+    margin-top: 5px;
+    margin-right: 40px;
+    
+  }
+  
+  

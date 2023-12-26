@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampe Line Chart</title>
+    <link rel="stylesheet" href="graph.css">
+</head>
+<body>
+    <div class="container">
+
+      <button
+          class="dienap" 
+          onclick="window.location.href='./graph.html'"
+        ></button>
+          <strong>Voltage</strong>
+          <button
+          class="dongdien" 
+          style="box-shadow: 0 0 5px #5688b0, 0 0 5px #1e00ff, 0 0 10px #1e00ff;
+          transition-delay: 1s;"
+        ></button>
+          <strong>Ampe</strong>
+          <button
+          class="tanso" 
+          onclick="window.location.href='./graphfre.html'"
+        ></button>
+          <strong>Frequence</strong>
+
+          <div class="title">Ampe (Iout)</div>
+          <canvas id="canvas"></canvas>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="graphampe.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
